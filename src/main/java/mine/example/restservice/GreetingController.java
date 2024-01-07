@@ -16,14 +16,5 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 
-    @PostMapping("/postGreeting")
-    public void postGreeting(@RequestBody Student student) {
 
-        System.out.println("Student Id :: " + student.getId());
-        System.out.println("Student Name :: " + student.getName());
-        System.out.println("Student ClassIn :: " + student.getClassin());
-        System.out.println("Student Rollnumber :: " + student.getRollnumber());
-        System.out.println("Student Address :: " + student.getAddress());
-        System.out.println("Student Class :: " + student.getClass());
-    }
 }
